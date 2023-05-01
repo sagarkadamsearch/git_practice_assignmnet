@@ -2,7 +2,7 @@ let count=0;
 let input=2;
 
 if(input>1){
-for(let i=2;i<=Math.sqrt(input)+1;i++){
+for(let i=2;i<=Math.sqrt(input);i++){
 
   console.log(i);
 if(input%i==0){
