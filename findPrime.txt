@@ -1,6 +1,4 @@
 
-const number = 13
-
 let flag = false;
 
 if (number == 1) {
