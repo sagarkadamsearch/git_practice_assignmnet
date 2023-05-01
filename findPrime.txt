@@ -1,0 +1,26 @@
+let count=0;
+let input=2;
+
+if(input>1){
+for(let i=2;i<=Math.sqrt(input)+1;i++){
+
+  console.log(i);
+if(input%i==0){
+count++;
+
+}
+
+}
+
+console.log(count);
+
+if(count==0){
+console.log(input+" "+"is a prime number");
+}
+else{
+console.log(input+" "+"is not a prime number");
+}
+}
+else{
+ console.log(input+" "+"is not a prime number");
+}
