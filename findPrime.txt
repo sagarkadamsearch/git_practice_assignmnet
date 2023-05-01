@@ -1,26 +1,24 @@
-let count=0;
-let input=2;
 
-if(input>1){
-for(let i=2;i<=Math.sqrt(input)+1;i++){
+const number = 13
 
-  console.log(i);
-if(input%i==0){
-count++;
+let flag = false;
 
+if (number == 1) {
+   console.log(" 1 is neither prime nor composite");
 }
 
-}
+else if (number > 1) {
 
-console.log(count);
+   for (let i = 2; i < number / 2; i++) {
+      if (number % i == 0) {
+         flag = true;
+         break;
+      }
+   }
 
-if(count==0){
-console.log(input+" "+"is a prime number");
+   if (flag == true) console.log(`${number} is not a prime number`);
+   else console.log(number, "is a prime number");
 }
-else{
-console.log(input+" "+"is not a prime number");
-}
-}
-else{
- console.log(input+" "+"is not a prime number");
+else {
+   console.log(number, "is not a prime number");
 }
